@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCards</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="imgs/infinity-icon (1).png">
+</head>
+<body>
+    <header id="main-header">
+        <div>
+            <h1>Create Your Own FlashCard</h1>
+            <a href="search.html">Search for a flashcard</a>
+        </div>
+    </header>
+    <section id="main-section">
+        <div class="scroll">
+            <img src="imgs/images.jpg" id="scroll"><span id="count-flashcards"></span>
+        </div>
+        <div class="flashcard-container">
+            <div class="container">
+                <input type="text" class="text-input" id="word" placeholder="EnterWord">
+                <input type="text" class="text-input" id="meaning" placeholder="Enter Meaning">
+                <textarea name="" id="definition" placeholder="Definition"></textarea>
+                <textarea name="" id="example" placeholder="Example"></textarea>
+                <button id="saveBtn">Save Flashcard</button>
+                <div id="error-msg"></div>
+            </div>
+        </div>
+    </section>
+    <section id="flashcards">
+        <div class="appending"></div>
+    </section>
+    <footer>
+        <a href="terms.html" id="terms">Terms of use</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
